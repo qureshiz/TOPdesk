@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Incident", "Incident\Incident.csproj", "{A3A0C433-E473-46FB-AFF7-49000A99E8AE}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOPdesk", "Incident\TOPdesk.csproj", "{A3A0C433-E473-46FB-AFF7-49000A99E8AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Incident.Tests", "Incident.Tests\Incident.Tests.csproj", "{C7250931-7E3E-4FB1-B07A-FCCD4AF33650}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOPdesk.Tests", "Incident.Tests\TOPdesk.Tests.csproj", "{C7250931-7E3E-4FB1-B07A-FCCD4AF33650}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20AEE962-50AB-4EDF-BB76-5844A3C8206D}
 	EndGlobalSection
 EndGlobal

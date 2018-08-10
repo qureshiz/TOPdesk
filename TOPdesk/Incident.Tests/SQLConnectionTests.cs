@@ -8,7 +8,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Collections.Generic;
 
-namespace Incident.Tests
+namespace TOPdesk.Tests
 {
     [TestClass]
     public class SQLConnectionTests
