@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
 
-namespace TOPdesk
+namespace EntityModel
 {
-    public class Class1
+    public class UnbreachIncident
     {
         public int UnbreachIncident(string incident)
         {
