@@ -6,13 +6,29 @@ using System.Threading.Tasks;
 
 namespace EntityModel.Service
 {
-    public abstract class QueryBuilder : IDisposable  //  Requires a Dispose method (below).
+    public class QueryBuilder
     {
         public string QueryString { get; private set; }
         public string QueryStringJoin { get; set; }
-        public string _WhereExpression { get: private AppDomainSetup;}
-        public string WhereExpression { get; private set; }
+        public string LastQueryString { get; set; }
+        public bool UseQueryBuilder { get; set; }
+        public int PageCount { get; set; } = 100;
+        public int SkipCount { get; set; } = 0;
+        public DateTime StartDate { get; set; }
+        public string StartDateString { set { DateTime.TryParse(value, out var _date);StartDate=_date } }
+        private DateTime _endDate;
+        public DateTime EndDate        {
+            get { return _endDate; }
+            set {
+                if { EndDateInclusive }
+                _endDate = value.AddDays(1);
+                else _enddate = value;
+
+            }
+        }
+        public object EndDateInclusive { get; private set; } = true;
         public string OrderBy { get; private set; }
+        
 
         public void Dispose()
         {
