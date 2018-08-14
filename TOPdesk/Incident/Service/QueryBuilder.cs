@@ -15,22 +15,25 @@ namespace EntityModel.Service
         public int PageCount { get; set; } = 100;
         public int SkipCount { get; set; } = 0;
         public DateTime StartDate { get; set; }
-        public string StartDateString { set { DateTime.TryParse(value, out var _date);StartDate=_date } }
+        public string StartDateString { set { DateTime.TryParse(value, out var _date); StartDate = _date; } }
         private DateTime _endDate;
         public DateTime EndDate        {
             get { return _endDate; }
             set {
-                if { EndDateInclusive }
+                if (EndDateInclusive)
                 _endDate = value.AddDays(1);
-                else _enddate = value;
-
+                else _endDate = value;
             }
         }
-        public object EndDateInclusive { get; private set; } = true;
+        public bool EndDateInclusive { get; private set; } = true;
+        public string EndDateString { set { DateTime.TryParse(value, out var _date); EndDate = _date; } }
+        public int DateRange { get; set; }
+        public int TimeRange { get; set; }
+        public string WhereExpression { get; set; }
         public string OrderBy { get; private set; }
         
 
-        public void Dispose()
+        public void Reset()
         {
             QueryString = WhereExpression = OrderBy = string.Empty;
         }
