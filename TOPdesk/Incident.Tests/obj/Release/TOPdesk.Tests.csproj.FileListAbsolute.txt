@@ -1,0 +1,12 @@
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Release\app.config
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Release\Incident.Tests.dll
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Release\Incident.Tests.pdb
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Release\Incident.dll
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Release\Incident.pdb
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Release\Incident.dll.config
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\obj\Release\TOPdesk.Tests.csprojAssemblyReference.cache
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\obj\Release\TOPdesk.Tests.csproj.CoreCompileInputs.cache
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\obj\Release\TOPdesk.Tests.csproj.CopyComplete
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\obj\Release\Incident.Tests.dll
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\obj\Release\Incident.Tests.pdb
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll

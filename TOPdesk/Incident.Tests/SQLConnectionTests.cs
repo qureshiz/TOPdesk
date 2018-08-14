@@ -218,5 +218,6 @@ namespace EntityModel.Tests
     public class Incident
     {
         public string IncidentName { get; set; }
+        public string IncidentNumber { get; set; }
     }
 }
