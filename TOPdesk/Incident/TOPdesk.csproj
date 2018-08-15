@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Service\IncidentService.cs" />
     <Compile Include="Service\QueryBuilder.cs" />
     <Compile Include="UnbreachIncident.cs" />
     <Compile Include="EntiryModel\IncidentModel.cs" />

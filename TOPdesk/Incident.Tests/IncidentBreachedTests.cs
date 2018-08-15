@@ -41,9 +41,11 @@ namespace EntityModel.Tests
                 SqlParameter returnValueParam = new SqlParameter();
                 returnValueParam.ParameterName = "@breachedIncident";
                 returnValueParam.SqlDbType = SqlDbType.Int;
-                returnValueParam.Direction = System.Data.ParameterDirection.ReturnValue;
-                cmd.Parameters.Add(returnValueParam);
 
+                returnValueParam.Direction = ParameterDirection.ReturnValue;
+                cmd.Parameters.Add(returnValueParam);
+                // Calling stored procedure with return value
+                // https://stackoverflow.com/questions/6210027/calling-stored-procedure-with-return-value
                 cmd.ExecuteNonQuery();
                
                 int returnValue = (int)cmd.Parameters["@breachedIncident"].Value;  //(int)outPutParameter.Value;
