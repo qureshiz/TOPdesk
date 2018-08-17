@@ -7,6 +7,7 @@ using System.IO;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Collections.Generic;
+using TOPdesk.Service;
 
 namespace EntityModel.Tests
 {

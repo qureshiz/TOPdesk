@@ -42,11 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Service\BaseService.cs" />
     <Compile Include="Service\IncidentService.cs" />
     <Compile Include="Service\QueryBuilder.cs" />
-    <Compile Include="UnbreachIncident.cs" />
-    <Compile Include="EntiryModel\IncidentModel.cs" />
-    <Compile Include="EntiryModel\Entities\Incident.cs" />
+    <Compile Include="01_EntiryModel\IncidentModel.cs" />
+    <Compile Include="01_EntiryModel\Entities\Incident.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -66,9 +66,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="02_ServiceModel\" />
     <Folder Include="BusinessLogic\" />
-    <Folder Include="Entities\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -7,23 +7,23 @@ using System.Threading.Tasks;
 
 namespace EntityModel
 {
-    public class IncidentConfigurationManager
-    {
-        public ConnectionStringSettingsCollection GetConfigManager()
-        {
-            var connectionStrings = ConfigurationManager.ConnectionStrings;
+    //public class IncidentConfigurationManager
+    //{
+    //    public ConnectionStringSettingsCollection GetConfigManager()
+    //    {
+    //        var connectionStrings = ConfigurationManager.ConnectionStrings;
 
-            return connectionStrings;
-        }
+    //        return connectionStrings;
+    //    }
 
-        public string GetConnectionString(string connectionStringName)
-        {
-            var returnValue = "";
+    //    public string GetConnectionString(string connectionStringName)
+    //    {
+    //        var returnValue = "";
 
-            var connectionStrings = GetConfigManager()[connectionStringName];
-            returnValue = connectionStrings.ConnectionString;
+    //        var connectionStrings = GetConfigManager()[connectionStringName];
+    //        returnValue = connectionStrings.ConnectionString;
 
-            return returnValue;
-        }
-    }
+    //        return returnValue;
+    //    }
+    //}
 }

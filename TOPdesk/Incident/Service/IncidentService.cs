@@ -7,33 +7,29 @@ using EntityModel;
 using System.Data.SqlClient;
 using System.Data;
 
-namespace TOPdesk.Service
 
+namespace TOPdesk.Service
 {
-    class IncidentService
+    public class IncidentService : BaseService
     {
-        public int IsIncidentBreached(string incidentNumber, string sqlInstance)
+        public int IsIncidentBreached(string incidentNumber, string sqlInstance, out string errorMessage)
         {
-            // Assign
+            var returnValue = -999;
+            errorMessage = "";
             var connectionStringName = sqlInstance;
             var configManager = new IncidentConfigurationManager();
             var connectionString = configManager.GetConnectionString(connectionStringName);
             var storeProcedureName = "USP_Get_Incident_Is_Breached";
-
             var incident = new Incident()
             {
                 IncidentNumber = incidentNumber
             };
-
-            // Act
-            // Assert
 
             using (var sqlConnection = new SqlConnection(connectionString))
             {
 
                 try
                 {
-
                     sqlConnection.Open();
 
                     var cmd = new SqlCommand(storeProcedureName, sqlConnection);
@@ -56,27 +52,27 @@ namespace TOPdesk.Service
                     // https://stackoverflow.com/questions/6210027/calling-stored-procedure-with-return-value
                     cmd.ExecuteNonQuery();
 
-                    int returnValue = (int)cmd.Parameters["@breachedIncident"].Value;  //(int)outPutParameter.Value;
-                    int.TryParse(cmd.Parameters["@breachedIncident"].Value.ToString(), out int returnValue2);
-                   
-                   return returnValue;
-
+                    returnValue = (int)cmd.Parameters["@breachedIncident"].Value;  //(int)outPutParameter.Value;
+                    int.TryParse(cmd.Parameters["@breachedIncident"].Value.ToString(), out returnValue);
+                    returnValue = cmd.Parameters["@breachedIncident"].Value != null ? (int)cmd.Parameters["@breachedIncident"].Value : returnValue;
                 }
-                catch (Exception e)
+                catch (SqlException sqlException)
                 {
-                    Console.WriteLine("{0} Exception", e);
-                   
+                    returnValue = -1000;
+                    errorMessage = sqlException.Message;
+                }
+                catch (Exception exp)
+                {
+                    returnValue = -1;
+                    errorMessage = exp.Message;
                 }
                 finally
                 {
-                    // Close the sql connection.
+                    //Close the sql connection.
                     sqlConnection.Close();
-                    
                 }
-
+                return returnValue;
             }
-
-
         }
 
     }

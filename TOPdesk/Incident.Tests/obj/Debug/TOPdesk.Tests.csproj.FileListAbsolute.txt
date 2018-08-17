@@ -2,6 +2,7 @@ C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Deb
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Debug\Incident.Tests.dll
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Debug\Incident.Tests.pdb
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Debug\Incident.dll
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Debug\Incident.pdb
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Debug\Incident.dll.config
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\obj\Debug\TOPdesk.Tests.csprojAssemblyReference.cache
@@ -9,4 +10,3 @@ C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\obj\Deb
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\obj\Debug\TOPdesk.Tests.csproj.CopyComplete
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\obj\Debug\Incident.Tests.dll
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\obj\Debug\Incident.Tests.pdb
-C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
