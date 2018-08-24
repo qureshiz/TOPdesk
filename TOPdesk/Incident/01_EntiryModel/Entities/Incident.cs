@@ -15,5 +15,7 @@ namespace EntityModel
         public bool SLAResolveBreached { get; set; }
         public bool Escalation { get; set; }
         public string ChangerOfTheCard { get; set; }
+        public string Request { get; set; }
+
     }
 }

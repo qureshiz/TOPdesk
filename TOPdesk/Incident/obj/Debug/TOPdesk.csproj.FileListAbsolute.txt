@@ -5,3 +5,9 @@ C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\bin\Debug\Inc
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\obj\Debug\TOPdesk.csproj.CoreCompileInputs.cache
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\obj\Debug\Incident.dll
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\obj\Debug\Incident.pdb
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\bin\Debug\EntityFramework.dll
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\bin\Debug\EntityFramework.xml
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\obj\Debug\TOPdesk.csprojAssemblyReference.cache
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\obj\Debug\TOPdesk.csproj.CopyComplete
