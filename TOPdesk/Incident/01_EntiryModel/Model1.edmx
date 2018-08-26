@@ -204,6 +204,13 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="USP_GetIncidentsOperatorOperatorGroupMovements" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="operatorOrOperatorGroup" Type="int" Mode="In" />
+          <Parameter Name="operatorID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="operatorGroupID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="startDate" Type="datetime" Mode="In" />
+          <Parameter Name="endDate" Type="datetime" Mode="In" />
+        </Function>
         <Function Name="UTVF_IncidentOperatorMovements" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="incident" Type="nvarchar" Mode="In" />
           <ReturnType>
@@ -479,7 +486,14 @@
             <Parameter Name="endDate" Mode="In" Type="DateTime" />
           </FunctionImport>
           <FunctionImport Name="UTVF_IncidentOperatorMovements" IsComposable="true" ReturnType="Collection(TopDesk577Model.UTVF_IncidentOperatorMovements_Result)">
-            <Parameter Name="incident" Mode="In" Type="String" />
+          <Parameter Name="incident" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="USP_GetIncidentsOperatorOperatorGroupMovements">
+            <Parameter Name="operatorOrOperatorGroup" Mode="In" Type="Int32" />
+            <Parameter Name="operatorID" Mode="In" Type="Guid" />
+            <Parameter Name="operatorGroupID" Mode="In" Type="Guid" />
+            <Parameter Name="startDate" Mode="In" Type="DateTime" />
+            <Parameter Name="endDate" Mode="In" Type="DateTime" />
           </FunctionImport>
         </EntityContainer>
         <ComplexType Name="UTVF_IncidentOperatorMovements_Result">
@@ -713,6 +727,7 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="USP_GetIncidentsOperatorOperatorGroupMovements" FunctionName="TopDesk577Model.Store.USP_GetIncidentsOperatorOperatorGroupMovements" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

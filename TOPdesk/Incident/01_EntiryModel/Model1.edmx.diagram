@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="24c96a7670664c1b9fe0664a69d449df" Name="Diagram1">
+      <Diagram DiagramId="24c96a7670664c1b9fe0664a69d449df" Name="Diagram1" ZoomLevel="20">
         <EntityTypeShape EntityType="TopDesk577Model.incident" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="TopDesk577Model.fk_incident_incidentid_incident" ManuallyRouted="false" />
         <AssociationConnector Association="TopDesk577Model.fk_incident_majorincidentid_incident" ManuallyRouted="false" />

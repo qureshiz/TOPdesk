@@ -224,6 +224,13 @@
     <FunctionImport Name="UTVF_IncidentOperatorMovements" IsComposable="true" ReturnType="Collection(TopDesk577Model.UTVF_IncidentOperatorMovements_Result)">
       <Parameter Name="incident" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="USP_GetIncidentsOperatorOperatorGroupMovements">
+      <Parameter Name="operatorOrOperatorGroup" Mode="In" Type="Int32" />
+      <Parameter Name="operatorID" Mode="In" Type="Guid" />
+      <Parameter Name="operatorGroupID" Mode="In" Type="Guid" />
+      <Parameter Name="startDate" Mode="In" Type="DateTime" />
+      <Parameter Name="endDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="UTVF_IncidentOperatorMovements_Result">
     <Property Type="Int64" Name="RowNumber" Nullable="true" />

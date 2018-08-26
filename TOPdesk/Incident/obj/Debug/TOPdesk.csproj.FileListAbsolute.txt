@@ -9,5 +9,5 @@ C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\bin\Debug\Ent
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\bin\Debug\EntityFramework.xml
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\obj\Debug\TOPdesk.csprojAssemblyReference.cache
 C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\obj\Debug\TOPdesk.csproj.CopyComplete
+C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\obj\Debug\TOPdesk.csprojAssemblyReference.cache

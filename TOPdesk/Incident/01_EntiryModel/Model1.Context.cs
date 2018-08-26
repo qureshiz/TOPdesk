@@ -56,5 +56,30 @@ namespace TOPdesk._01_EntiryModel
     
             return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<UTVF_IncidentOperatorMovements_Result>("[TopDesk577Entities].[UTVF_IncidentOperatorMovements](@incident)", incidentParameter);
         }
+    
+        public virtual int USP_GetIncidentsOperatorOperatorGroupMovements(Nullable<int> operatorOrOperatorGroup, Nullable<System.Guid> operatorID, Nullable<System.Guid> operatorGroupID, Nullable<System.DateTime> startDate, Nullable<System.DateTime> endDate)
+        {
+            var operatorOrOperatorGroupParameter = operatorOrOperatorGroup.HasValue ?
+                new ObjectParameter("operatorOrOperatorGroup", operatorOrOperatorGroup) :
+                new ObjectParameter("operatorOrOperatorGroup", typeof(int));
+    
+            var operatorIDParameter = operatorID.HasValue ?
+                new ObjectParameter("operatorID", operatorID) :
+                new ObjectParameter("operatorID", typeof(System.Guid));
+    
+            var operatorGroupIDParameter = operatorGroupID.HasValue ?
+                new ObjectParameter("operatorGroupID", operatorGroupID) :
+                new ObjectParameter("operatorGroupID", typeof(System.Guid));
+    
+            var startDateParameter = startDate.HasValue ?
+                new ObjectParameter("startDate", startDate) :
+                new ObjectParameter("startDate", typeof(System.DateTime));
+    
+            var endDateParameter = endDate.HasValue ?
+                new ObjectParameter("endDate", endDate) :
+                new ObjectParameter("endDate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("USP_GetIncidentsOperatorOperatorGroupMovements", operatorOrOperatorGroupParameter, operatorIDParameter, operatorGroupIDParameter, startDateParameter, endDateParameter);
+        }
     }
 }

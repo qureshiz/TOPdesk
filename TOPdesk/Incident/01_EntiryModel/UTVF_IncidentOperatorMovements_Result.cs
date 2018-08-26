@@ -10,16 +10,11 @@
 namespace TOPdesk._01_EntiryModel
 {
     using System;
-    using System.ComponentModel;
-
+    
     public partial class UTVF_IncidentOperatorMovements_Result
     {
         public Nullable<long> RowNumber { get; set; }
         public Nullable<bool> Processed { get; set; }
-        /// <summary>
-        /// Breach of the peace
-        /// </summary>
-        [Description("Shit happens")]
         public string Incident { get; set; }
         public string Type { get; set; }
         public Nullable<System.DateTime> Log_Date { get; set; }

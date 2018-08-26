@@ -52,7 +52,7 @@ namespace TOPdesk.Tests.StoredProcedureTests
             Assert.IsNotNull(results, "Stored Proceducre returned no results");
             Assert.IsTrue(results.Any(), "Doesn't have any records");
 
-            var incident = results.FirstOrDefault();
+            var incident = results.FirstOrDefault();  // Incident number.
             Assert.IsNotNull(incident, "Incident is null");
             Assert.IsFalse(string.IsNullOrEmpty(incident.Incident), "Incident text is empty");
 
@@ -78,6 +78,28 @@ namespace TOPdesk.Tests.StoredProcedureTests
             });
 
             JSON_FileExport.WriteFile("StoredProcedureTest02", results2, results2.Count(), "USP_Functions");
+        }
+
+        [TestMethod]
+        public void Call_SQL_Stored_Procedure_USP_GetIncidentsOperatorOperatorGroupMovements()
+        {
+            //int returnValue = 0; // Return value of Stored Procedure.
+            int operatorOrOperatorGroup = 1; // 1 Operator, 2 Operator Group.
+            string operatorIDString = "08921908-EBA0-4A20-B2C7-703A05569338"; // Zishan Qureshi Operator ID.
+            var startDateString = "02 jul 2018";
+            var endDateString = "03 jul 2018";
+
+            DateTime.TryParse(startDateString, out var startDate);
+            DateTime.TryParse(endDateString, out var endDate);
+            Guid.TryParse(operatorIDString, out var operatorId);
+
+            TopDesk577Entities db = new TopDesk577Entities();
+            var results = db.USP_GetIncidentsOperatorOperatorGroupMovements(operatorOrOperatorGroup, operatorId, null, startDate, endDate);
+            Assert.IsNotNull(results, "Stored Proceducre returned no results");
+            //Assert.IsTrue(results.Any(), "Doesn't have any records");  //  'int' does not contain a definition for 'Any' and no extension method 'Any' accepting a first argument of ...
+
+            // Iterate the results variable and check that the ChangedTo field has a value.
+            
         }
 
     }

@@ -207,5 +207,6 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_GetIncidentsOperatorOperatorGroupMovements" FunctionName="TopDesk577Model.Store.USP_GetIncidentsOperatorOperatorGroupMovements" />
   </EntityContainerMapping>
 </Mapping>

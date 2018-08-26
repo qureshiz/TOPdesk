@@ -11,8 +11,7 @@ namespace TOPdesk._01_EntiryModel
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class incident
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -21,10 +20,7 @@ namespace TOPdesk._01_EntiryModel
             this.incident1 = new HashSet<incident>();
             this.incident11 = new HashSet<incident>();
         }
-        /// <summary>
-        /// Anamwmmeefafefefe
-        /// </summary>
-        [Description("Hell if I know")]
+    
         public Nullable<System.Guid> aanmelderafdelingid { get; set; }
         public Nullable<System.Guid> aanmelderbudgethouderid { get; set; }
         public Nullable<System.Guid> aanmelderlokatieid { get; set; }
