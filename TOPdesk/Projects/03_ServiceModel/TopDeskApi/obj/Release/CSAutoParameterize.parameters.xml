@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="TOPdesk577-Web.config Connection String" description="TOPdesk577 Connection String used in web.config by the application to access the database." defaultValue="Data Source=est-td-test-001;Initial Catalog=TopDesk577;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\qureshiz\\Documents\\GitHub\\Zishan\\TOPdesk\\TOPdesk\\Projects\\03_ServiceModel\\TopDeskApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TOPdesk577']/@connectionString" />
+  </parameter>
+  <parameter name="TOPdeskLive-Web.config Connection String" description="TOPdeskLive Connection String used in web.config by the application to access the database." defaultValue="Data Source=EST-TOP-SVR01;Initial Catalog=TopDeskLive;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\qureshiz\\Documents\\GitHub\\Zishan\\TOPdesk\\TOPdesk\\Projects\\03_ServiceModel\\TopDeskApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TOPdeskLive']/@connectionString" />
+  </parameter>
+  <parameter name="TopDesk577Entities-Web.config Connection String" description="TopDesk577Entities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Context.TopDeskModel.csdl|res://*/Context.TopDeskModel.ssdl|res://*/Context.TopDeskModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=est-td-test-001;initial catalog=TopDesk577;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\qureshiz\\Documents\\GitHub\\Zishan\\TOPdesk\\TOPdesk\\Projects\\03_ServiceModel\\TopDeskApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TopDesk577Entities']/@connectionString" />
+  </parameter>
+</parameters>

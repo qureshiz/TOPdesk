@@ -1,7 +1,0 @@
-C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\bin\Debug\Incident.dll.config
-C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\bin\Debug\Incident.dll
-C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\bin\Debug\Incident.pdb
-C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\obj\Debug\Incident.dll
-C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\obj\Debug\Incident.pdb
-C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\bin\Debug\app.config
-C:\Users\qureshiz\Documents\GitHub\Zishan\TOPdesk\TOPdesk\Incident\obj\Debug\Incident.csprojResolveAssemblyReference.cache

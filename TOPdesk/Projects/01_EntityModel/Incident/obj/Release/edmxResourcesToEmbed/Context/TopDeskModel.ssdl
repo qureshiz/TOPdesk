@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TopDesk577Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="incident">
+    <Key>
+      <PropertyRef Name="unid" />
+    </Key>
+    <Property Name="aanmelderafdelingid" Type="uniqueidentifier" />
+    <Property Name="aanmelderbudgethouderid" Type="uniqueidentifier" />
+    <Property Name="aanmelderlokatieid" Type="uniqueidentifier" />
+    <Property Name="aanmeldertelefoon" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="aanmeldervestigingid" Type="uniqueidentifier" />
+    <Property Name="actie" Type="ntext" />
+    <Property Name="actiedoorid" Type="uniqueidentifier" />
+    <Property Name="afgemeld" Type="bit" Nullable="false" />
+    <Property Name="afhandelingstatusid" Type="uniqueidentifier" />
+    <Property Name="archiefredenid" Type="uniqueidentifier" />
+    <Property Name="bewaakt" Type="bit" Nullable="false" />
+    <Property Name="configuratieid" Type="uniqueidentifier" />
+    <Property Name="configuratieobjectid" Type="uniqueidentifier" />
+    <Property Name="deelactievolgnummer" Type="int" Nullable="false" />
+    <Property Name="deescalatieredenid" Type="uniqueidentifier" />
+    <Property Name="dnogebruikt" Type="bit" Nullable="false" />
+    <Property Name="dnoid" Type="uniqueidentifier" />
+    <Property Name="doorlooptijdid" Type="uniqueidentifier" />
+    <Property Name="emailstatus" Type="int" Nullable="false" />
+    <Property Name="escalatieredenid" Type="uniqueidentifier" />
+    <Property Name="gedeescaleerd" Type="bit" Nullable="false" />
+    <Property Name="geescaleerd" Type="bit" Nullable="false" />
+    <Property Name="gereed" Type="bit" Nullable="false" />
+    <Property Name="impactid" Type="uniqueidentifier" />
+    <Property Name="incident_domeinid" Type="uniqueidentifier" />
+    <Property Name="incident_specid" Type="uniqueidentifier" />
+    <Property Name="incidentid" Type="uniqueidentifier" />
+    <Property Name="lijn1actiedoorid" Type="uniqueidentifier" />
+    <Property Name="oplosmethodeid" Type="uniqueidentifier" />
+    <Property Name="persoonid" Type="uniqueidentifier" />
+    <Property Name="ref_configuratie" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="ref_dnocontractid" Type="uniqueidentifier" />
+    <Property Name="ref_dnodienstid" Type="uniqueidentifier" />
+    <Property Name="ref_domein" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="ref_persnr" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ref_specificatie" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="ref_vestiging" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="soortbinnenkomstid" Type="uniqueidentifier" />
+    <Property Name="soortmeldingid" Type="uniqueidentifier" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="uidaanmk" Type="uniqueidentifier" />
+    <Property Name="uidwijzig" Type="uniqueidentifier" />
+    <Property Name="unid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="verzoek" Type="ntext" />
+    <Property Name="volgnummer" Type="int" Nullable="false" />
+    <Property Name="vrijegetal1" Type="float" Nullable="false" />
+    <Property Name="vrijegetal2" Type="float" Nullable="false" />
+    <Property Name="vrijelogisch1" Type="bit" Nullable="false" />
+    <Property Name="vrijelogisch2" Type="bit" Nullable="false" />
+    <Property Name="vrijelogisch3" Type="bit" Nullable="false" />
+    <Property Name="vrijelogisch4" Type="bit" Nullable="false" />
+    <Property Name="vrijelogisch5" Type="bit" Nullable="false" />
+    <Property Name="vrijememo1" Type="ntext" />
+    <Property Name="vrijememo2" Type="ntext" />
+    <Property Name="vrijeopzoek1" Type="uniqueidentifier" />
+    <Property Name="vrijeopzoek2" Type="uniqueidentifier" />
+    <Property Name="vrijeopzoek3" Type="uniqueidentifier" />
+    <Property Name="ref_debnummer" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="dataanmk" Type="datetime" />
+    <Property Name="datumaangemeld" Type="datetime" />
+    <Property Name="datumafgemeld" Type="datetime" />
+    <Property Name="datumafspraak" Type="datetime" />
+    <Property Name="datumgereed" Type="datetime" />
+    <Property Name="datwijzig" Type="datetime" />
+    <Property Name="vrijedatum1" Type="datetime" />
+    <Property Name="vrijedatum2" Type="datetime" />
+    <Property Name="lijn1tijdbesteed" Type="bigint" Nullable="false" />
+    <Property Name="onkosten" Type="money" Nullable="false" />
+    <Property Name="tijdbesteed" Type="bigint" Nullable="false" />
+    <Property Name="totaleonkosten" Type="money" Nullable="false" />
+    <Property Name="totaletijd" Type="bigint" Nullable="false" />
+    <Property Name="verwtijdbesteed" Type="bigint" Nullable="false" />
+    <Property Name="minutendoorlooptijd" Type="bigint" Nullable="false" />
+    <Property Name="extraaid" Type="uniqueidentifier" />
+    <Property Name="extrabid" Type="uniqueidentifier" />
+    <Property Name="dnostatus" Type="int" Nullable="false" />
+    <Property Name="korteomschrijving" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="datumafspraaksla" Type="datetime" />
+    <Property Name="oplossingid" Type="uniqueidentifier" />
+    <Property Name="locatieid" Type="uniqueidentifier" />
+    <Property Name="vestigingid" Type="uniqueidentifier" />
+    <Property Name="betreftkeuze" Type="int" Nullable="false" />
+    <Property Name="operatorid" Type="uniqueidentifier" />
+    <Property Name="naam" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="extraapersoonid" Type="uniqueidentifier" />
+    <Property Name="extrabpersoonid" Type="uniqueidentifier" />
+    <Property Name="ismajorincident" Type="bit" Nullable="false" />
+    <Property Name="majorincidentid" Type="uniqueidentifier" />
+    <Property Name="vrijedatum3" Type="datetime" />
+    <Property Name="vrijegetal3" Type="float" Nullable="false" />
+    <Property Name="vrijememo3" Type="ntext" />
+    <Property Name="vrijedatum4" Type="datetime" />
+    <Property Name="vrijegetal4" Type="float" Nullable="false" />
+    <Property Name="vrijememo4" Type="ntext" />
+    <Property Name="vrijedatum5" Type="datetime" />
+    <Property Name="vrijegetal5" Type="float" Nullable="false" />
+    <Property Name="vrijememo5" Type="ntext" />
+    <Property Name="vrijeopzoek4" Type="uniqueidentifier" />
+    <Property Name="vrijeopzoek5" Type="uniqueidentifier" />
+    <Property Name="vrijetekst1" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="vrijetekst2" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="vrijetekst3" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="vrijetekst4" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="vrijetekst5" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="attvrijedatum1" Type="datetime" />
+    <Property Name="attvrijegetal1" Type="float" Nullable="false" />
+    <Property Name="attvrijelogisch1" Type="bit" Nullable="false" />
+    <Property Name="attvrijememo1" Type="ntext" />
+    <Property Name="attvrijeopzoek1" Type="uniqueidentifier" />
+    <Property Name="attvrijetekst1" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="attvrijedatum2" Type="datetime" />
+    <Property Name="attvrijegetal2" Type="float" Nullable="false" />
+    <Property Name="attvrijelogisch2" Type="bit" Nullable="false" />
+    <Property Name="attvrijememo2" Type="ntext" />
+    <Property Name="attvrijeopzoek2" Type="uniqueidentifier" />
+    <Property Name="attvrijetekst2" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="attvrijedatum3" Type="datetime" />
+    <Property Name="attvrijegetal3" Type="float" Nullable="false" />
+    <Property Name="attvrijelogisch3" Type="bit" Nullable="false" />
+    <Property Name="attvrijememo3" Type="ntext" />
+    <Property Name="attvrijeopzoek3" Type="uniqueidentifier" />
+    <Property Name="attvrijetekst3" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="attvrijedatum4" Type="datetime" />
+    <Property Name="attvrijegetal4" Type="float" Nullable="false" />
+    <Property Name="attvrijelogisch4" Type="bit" Nullable="false" />
+    <Property Name="attvrijememo4" Type="ntext" />
+    <Property Name="attvrijeopzoek4" Type="uniqueidentifier" />
+    <Property Name="attvrijetekst4" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="attvrijedatum5" Type="datetime" />
+    <Property Name="attvrijegetal5" Type="float" Nullable="false" />
+    <Property Name="attvrijelogisch5" Type="bit" Nullable="false" />
+    <Property Name="attvrijememo5" Type="ntext" />
+    <Property Name="attvrijeopzoek5" Type="uniqueidentifier" />
+    <Property Name="attvrijetekst5" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="servicewindowid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="kosten_artikelen" Type="money" Nullable="false" />
+    <Property Name="kosten_objecten" Type="money" Nullable="false" />
+    <Property Name="externnummer" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="aanmelderemail" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ref_object" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="onhold" Type="bit" Nullable="false" />
+    <Property Name="onholdduration" Type="bigint" Nullable="false" />
+    <Property Name="operatorgroupid" Type="uniqueidentifier" />
+    <Property Name="escalationoperatorid" Type="uniqueidentifier" />
+    <Property Name="onholddatum" Type="datetime" />
+    <Property Name="urgencyid" Type="uniqueidentifier" />
+    <Property Name="priorityid" Type="uniqueidentifier" />
+    <Property Name="bespokememo" Type="ntext" />
+    <Property Name="importtype" Type="int" Nullable="false" />
+    <Property Name="supplierid" Type="uniqueidentifier" />
+    <Property Name="importid" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="importdate" Type="datetime" />
+    <Property Name="savedinsecure" Type="bit" Nullable="false" />
+    <Property Name="ref_main_incident_status" Type="int" Nullable="false" />
+    <Property Name="ref_main_incident_bf" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="ref_main_incident_name" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="appointmentid" Type="uniqueidentifier" />
+    <Property Name="aanmeldernaam" Type="nvarchar" MaxLength="109" Nullable="false" />
+    <Property Name="ref_escalationoperator" Type="nvarchar" MaxLength="109" Nullable="false" />
+    <Property Name="ref_operatordynanaam" Type="nvarchar" MaxLength="109" Nullable="false" />
+    <Property Name="ref_operatorgroup" Type="nvarchar" MaxLength="109" Nullable="false" />
+    <Property Name="resolvedduration" Type="bigint" Nullable="false" />
+    <Property Name="adjusteddurationonhold" Type="bigint" Nullable="false" />
+    <Property Name="adjusteddurationresolved" Type="bigint" Nullable="false" />
+    <Property Name="ref_impact" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ref_soortmelding" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ref_status" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ref_servicelevelid" Type="uniqueidentifier" />
+    <Property Name="supplierserviceid" Type="uniqueidentifier" />
+    <Property Name="ref_progresstrail" Type="ntext" />
+  </EntityType>
+  <Association Name="fk_incident_incidentid_incident">
+    <End Role="incident" Type="Self.incident" Multiplicity="0..1" />
+    <End Role="incident1" Type="Self.incident" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="incident">
+        <PropertyRef Name="unid" />
+      </Principal>
+      <Dependent Role="incident1">
+        <PropertyRef Name="incidentid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_incident_majorincidentid_incident">
+    <End Role="incident" Type="Self.incident" Multiplicity="0..1" />
+    <End Role="incident1" Type="Self.incident" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="incident">
+        <PropertyRef Name="unid" />
+      </Principal>
+      <Dependent Role="incident1">
+        <PropertyRef Name="majorincidentid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="USP_GetIncidentsOperatorOperatorGroupMovements" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="operatorOrOperatorGroup" Type="int" Mode="In" />
+    <Parameter Name="operatorID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="operatorGroupID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="startDate" Type="datetime" Mode="In" />
+    <Parameter Name="endDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="UTVF_IncidentOperatorGroupMovements" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="incident" Type="nvarchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="RowNumber" Type="bigint" />
+          <Property Name="Processed" Type="bit" />
+          <Property Name="Incident" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Type" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Log_Date" Type="datetime" />
+          <Property Name="Impact" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Major_Incident" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="Category" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="SubCategory" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Move_Date" Type="datetime" />
+          <Property Name="ChangedFrom" Type="nvarchar" MaxLength="109" />
+          <Property Name="ChangedTo" Type="nvarchar" MaxLength="109" />
+          <Property Name="ChangedBy" Type="nvarchar" MaxLength="109" />
+          <Property Name="CurrentOperator" Type="nvarchar" MaxLength="109" />
+          <Property Name="ChangedFromOperatorGroupID" Type="uniqueidentifier" />
+          <Property Name="ChangeToOperatorGroupID" Type="uniqueidentifier" />
+          <Property Name="CurrentOperatorGroupID" Type="uniqueidentifier" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="UTVF_IncidentOperatorMovements" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="incident" Type="nvarchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="RowNumber" Type="bigint" />
+          <Property Name="Processed" Type="bit" />
+          <Property Name="Incident" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Type" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Log_Date" Type="datetime" />
+          <Property Name="Impact" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Major_Incident" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="Category" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="SubCategory" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Move_Date" Type="datetime" />
+          <Property Name="ChangedFrom" Type="nvarchar" MaxLength="109" />
+          <Property Name="ChangedTo" Type="nvarchar" MaxLength="109" />
+          <Property Name="ChangedBy" Type="nvarchar" MaxLength="109" />
+          <Property Name="CurrentOperator" Type="nvarchar" MaxLength="109" />
+          <Property Name="ChangedFromOperatorID" Type="uniqueidentifier" />
+          <Property Name="ChangeToOperatorID" Type="uniqueidentifier" />
+          <Property Name="CurrentOperatorID" Type="uniqueidentifier" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="UTVF_IncidentsMovedToOperator" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="operatorID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="startDate" Type="datetime" Mode="In" />
+    <Parameter Name="endDate" Type="datetime" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="Incident" Type="nvarchar" MaxLength="30" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="UTVF_IncidentsMovedToOperatorGroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="operatorGroupID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="startDate" Type="datetime" Mode="In" />
+    <Parameter Name="endDate" Type="datetime" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="Incident" Type="nvarchar" MaxLength="30" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <EntityContainer Name="TopDesk577ModelStoreContainer">
+    <EntitySet Name="incident" EntityType="Self.incident" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_incident_incidentid_incident" Association="Self.fk_incident_incidentid_incident">
+      <End Role="incident" EntitySet="incident" />
+      <End Role="incident1" EntitySet="incident" />
+    </AssociationSet>
+    <AssociationSet Name="fk_incident_majorincidentid_incident" Association="Self.fk_incident_majorincidentid_incident">
+      <End Role="incident" EntitySet="incident" />
+      <End Role="incident1" EntitySet="incident" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
