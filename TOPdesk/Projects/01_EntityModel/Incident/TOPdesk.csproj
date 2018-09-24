@@ -55,6 +55,7 @@
       <DependentUpon>TopDeskModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Context\IncidentModel.cs" />
+    <Compile Include="Context\TopDesk577Entities.cs" />
     <Compile Include="Context\TopDeskModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -69,6 +70,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TopDeskModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Context\UTVF_DailyCallsBreached_Result.cs">
+      <DependentUpon>TopDeskModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Context\UTVF_IncidentOperatorGroupMovements_Result.cs">
       <DependentUpon>TopDeskModel.tt</DependentUpon>

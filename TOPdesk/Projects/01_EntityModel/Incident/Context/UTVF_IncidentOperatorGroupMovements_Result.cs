@@ -26,7 +26,7 @@ namespace TOPdesk.Context
         public string ChangedFrom { get; set; }
         public string ChangedTo { get; set; }
         public string ChangedBy { get; set; }
-        public string CurrentOperator { get; set; }
+        public string CurrentOperatorGroup { get; set; }
         public Nullable<System.Guid> ChangedFromOperatorGroupID { get; set; }
         public Nullable<System.Guid> ChangeToOperatorGroupID { get; set; }
         public Nullable<System.Guid> CurrentOperatorGroupID { get; set; }

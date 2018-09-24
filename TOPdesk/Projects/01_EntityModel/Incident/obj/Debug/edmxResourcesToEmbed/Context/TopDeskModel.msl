@@ -209,6 +209,25 @@
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="USP_GetIncidentsOperatorOperatorGroupMovements" FunctionName="TopDesk577Model.Store.USP_GetIncidentsOperatorOperatorGroupMovements" />
     <FunctionImportMapping FunctionImportName="UTVF_IncidentsMovedToOperatorGroup" FunctionName="TopDesk577Model.Store.UTVF_IncidentsMovedToOperatorGroup" />
+    <FunctionImportMapping FunctionImportName="UTVF_DailyCallsBreached" FunctionName="TopDesk577Model.Store.UTVF_DailyCallsBreached">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TopDesk577Model.UTVF_DailyCallsBreached_Result">
+          <ScalarProperty Name="naam" ColumnName="naam" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="dataanmk" ColumnName="dataanmk" />
+          <ScalarProperty Name="datumafspraak" ColumnName="datumafspraak" />
+          <ScalarProperty Name="ref_vestiging" ColumnName="ref_vestiging" />
+          <ScalarProperty Name="vrijetekst1" ColumnName="vrijetekst1" />
+          <ScalarProperty Name="ref_operatorgroup" ColumnName="ref_operatorgroup" />
+          <ScalarProperty Name="ref_operatordynanaam" ColumnName="ref_operatordynanaam" />
+          <ScalarProperty Name="korteomschrijving" ColumnName="korteomschrijving" />
+          <ScalarProperty Name="vrijelogisch1" ColumnName="vrijelogisch1" />
+          <ScalarProperty Name="vrijelogisch2" ColumnName="vrijelogisch2" />
+          <ScalarProperty Name="vrijegetal2" ColumnName="vrijegetal2" />
+          <ScalarProperty Name="gereed" ColumnName="gereed" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="UTVF_IncidentOperatorGroupMovements" FunctionName="TopDesk577Model.Store.UTVF_IncidentOperatorGroupMovements">
       <ResultMapping>
         <ComplexTypeMapping TypeName="TopDesk577Model.UTVF_IncidentOperatorGroupMovements_Result">
@@ -225,7 +244,7 @@
           <ScalarProperty Name="ChangedFrom" ColumnName="ChangedFrom" />
           <ScalarProperty Name="ChangedTo" ColumnName="ChangedTo" />
           <ScalarProperty Name="ChangedBy" ColumnName="ChangedBy" />
-          <ScalarProperty Name="CurrentOperator" ColumnName="CurrentOperator" />
+          <ScalarProperty Name="CurrentOperatorGroup" ColumnName="CurrentOperatorGroup" />
           <ScalarProperty Name="ChangedFromOperatorGroupID" ColumnName="ChangedFromOperatorGroupID" />
           <ScalarProperty Name="ChangeToOperatorGroupID" ColumnName="ChangeToOperatorGroupID" />
           <ScalarProperty Name="CurrentOperatorGroupID" ColumnName="CurrentOperatorGroupID" />

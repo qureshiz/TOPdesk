@@ -206,6 +206,30 @@
     <Parameter Name="startDate" Type="datetime" Mode="In" />
     <Parameter Name="endDate" Type="datetime" Mode="In" />
   </Function>
+  <Function Name="UTVF_DailyCallsBreached" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startDate" Type="datetime" Mode="In" />
+    <Parameter Name="endDate" Type="datetime" Mode="In" />
+    <Parameter Name="region" Type="nvarchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="naam" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="status" Type="int" Nullable="false" />
+          <Property Name="dataanmk" Type="datetime" />
+          <Property Name="datumafspraak" Type="datetime" />
+          <Property Name="ref_vestiging" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="vrijetekst1" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="ref_operatorgroup" Type="nvarchar" MaxLength="109" Nullable="false" />
+          <Property Name="ref_operatordynanaam" Type="nvarchar" MaxLength="109" Nullable="false" />
+          <Property Name="korteomschrijving" Type="nvarchar" MaxLength="80" Nullable="false" />
+          <Property Name="vrijelogisch1" Type="bit" Nullable="false" />
+          <Property Name="vrijelogisch2" Type="bit" Nullable="false" />
+          <Property Name="vrijegetal2" Type="float" Nullable="false" />
+          <Property Name="gereed" Type="bit" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
   <Function Name="UTVF_IncidentOperatorGroupMovements" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="incident" Type="nvarchar" Mode="In" />
     <ReturnType>
@@ -224,7 +248,7 @@
           <Property Name="ChangedFrom" Type="nvarchar" MaxLength="109" />
           <Property Name="ChangedTo" Type="nvarchar" MaxLength="109" />
           <Property Name="ChangedBy" Type="nvarchar" MaxLength="109" />
-          <Property Name="CurrentOperator" Type="nvarchar" MaxLength="109" />
+          <Property Name="CurrentOperatorGroup" Type="nvarchar" MaxLength="109" />
           <Property Name="ChangedFromOperatorGroupID" Type="uniqueidentifier" />
           <Property Name="ChangeToOperatorGroupID" Type="uniqueidentifier" />
           <Property Name="CurrentOperatorGroupID" Type="uniqueidentifier" />

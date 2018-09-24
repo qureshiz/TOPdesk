@@ -100,6 +100,24 @@ namespace TOPdesk.Context
             return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<string>("[TopDesk577Entities].[UTVF_IncidentsMovedToOperatorGroup](@operatorGroupID, @startDate, @endDate)", operatorGroupIDParameter, startDateParameter, endDateParameter);
         }
     
+        [DbFunction("TopDesk577Entities", "UTVF_DailyCallsBreached")]
+        public virtual IQueryable<UTVF_DailyCallsBreached_Result> UTVF_DailyCallsBreached(Nullable<System.DateTime> startDate, Nullable<System.DateTime> endDate, string region)
+        {
+            var startDateParameter = startDate.HasValue ?
+                new ObjectParameter("startDate", startDate) :
+                new ObjectParameter("startDate", typeof(System.DateTime));
+    
+            var endDateParameter = endDate.HasValue ?
+                new ObjectParameter("endDate", endDate) :
+                new ObjectParameter("endDate", typeof(System.DateTime));
+    
+            var regionParameter = region != null ?
+                new ObjectParameter("region", region) :
+                new ObjectParameter("region", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<UTVF_DailyCallsBreached_Result>("[TopDesk577Entities].[UTVF_DailyCallsBreached](@startDate, @endDate, @region)", startDateParameter, endDateParameter, regionParameter);
+        }
+    
         [DbFunction("TopDesk577Entities", "UTVF_IncidentOperatorGroupMovements")]
         public virtual IQueryable<UTVF_IncidentOperatorGroupMovements_Result> UTVF_IncidentOperatorGroupMovements(string incident)
         {

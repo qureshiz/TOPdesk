@@ -236,6 +236,11 @@
       <Parameter Name="startDate" Mode="In" Type="DateTime" />
       <Parameter Name="endDate" Mode="In" Type="DateTime" />
     </FunctionImport>
+    <FunctionImport Name="UTVF_DailyCallsBreached" IsComposable="true" ReturnType="Collection(TopDesk577Model.UTVF_DailyCallsBreached_Result)">
+      <Parameter Name="startDate" Mode="In" Type="DateTime" />
+      <Parameter Name="endDate" Mode="In" Type="DateTime" />
+      <Parameter Name="region" Mode="In" Type="String" />
+    </FunctionImport>
     <FunctionImport Name="UTVF_IncidentOperatorGroupMovements" IsComposable="true" ReturnType="Collection(TopDesk577Model.UTVF_IncidentOperatorGroupMovements_Result)">
       <Parameter Name="incident" Mode="In" Type="String" />
     </FunctionImport>
@@ -259,6 +264,21 @@
     <Property Type="Guid" Name="ChangeToOperatorID" Nullable="true" />
     <Property Type="Guid" Name="CurrentOperatorID" Nullable="true" />
   </ComplexType>
+  <ComplexType Name="UTVF_DailyCallsBreached_Result">
+    <Property Type="String" Name="naam" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="status" Nullable="false" />
+    <Property Type="DateTime" Name="dataanmk" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="datumafspraak" Nullable="true" Precision="23" />
+    <Property Type="String" Name="ref_vestiging" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="vrijetekst1" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="ref_operatorgroup" Nullable="false" MaxLength="109" />
+    <Property Type="String" Name="ref_operatordynanaam" Nullable="false" MaxLength="109" />
+    <Property Type="String" Name="korteomschrijving" Nullable="false" MaxLength="80" />
+    <Property Type="Boolean" Name="vrijelogisch1" Nullable="false" />
+    <Property Type="Boolean" Name="vrijelogisch2" Nullable="false" />
+    <Property Type="Double" Name="vrijegetal2" Nullable="false" />
+    <Property Type="Boolean" Name="gereed" Nullable="false" />
+  </ComplexType>
   <ComplexType Name="UTVF_IncidentOperatorGroupMovements_Result">
     <Property Type="Int64" Name="RowNumber" Nullable="true" />
     <Property Type="Boolean" Name="Processed" Nullable="true" />
@@ -273,7 +293,7 @@
     <Property Type="String" Name="ChangedFrom" Nullable="true" MaxLength="109" />
     <Property Type="String" Name="ChangedTo" Nullable="true" MaxLength="109" />
     <Property Type="String" Name="ChangedBy" Nullable="true" MaxLength="109" />
-    <Property Type="String" Name="CurrentOperator" Nullable="true" MaxLength="109" />
+    <Property Type="String" Name="CurrentOperatorGroup" Nullable="true" MaxLength="109" />
     <Property Type="Guid" Name="ChangedFromOperatorGroupID" Nullable="true" />
     <Property Type="Guid" Name="ChangeToOperatorGroupID" Nullable="true" />
     <Property Type="Guid" Name="CurrentOperatorGroupID" Nullable="true" />

@@ -64,6 +64,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\01_EntityModel\Incident\TOPdesk.csproj">
+      <Project>{a3a0c433-e473-46fb-aff7-49000a99e8ae}</Project>
+      <Name>TOPdesk</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TopDeskApi\TopDeskApi.csproj">
       <Project>{7da8b525-f583-47e4-80a8-ca202f7aca97}</Project>
       <Name>TopDeskApi</Name>
